@@ -2,9 +2,10 @@ import $ from 'jquery'
 import 'lodash'
 import { PREV_QUOTE, NEXT_QUOTE } from '../constants/ActionTypes'
 
-var quotesJSON = []
+let quotesJSON = []
+
 $.ajax({
-  url: "./quotes.json",
+  url: './quotes.json',
   async: false,
   dataType: 'json',
   success: function(json) {

@@ -4,7 +4,7 @@ import { PREV_QUOTE, NEXT_QUOTE } from '../constants/ActionTypes'
 
 var quotesJSON = []
 $.ajax({
-  url: "../src/quotes.json",
+  url: "../quotes.json",
   async: false,
   dataType: 'json',
   success: function(json) {

@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import Quote from '../components/Quote';
@@ -10,8 +10,10 @@ export default class App extends Component {
     return (
       <div>
         <Quote quotes={quotes} />
-        <button onClick={actions.prevQuote}>previous</button>
-        <button onClick={actions.nextQuote}>next</button>
+        <div className='buttons'>
+            <button onClick={actions.prevQuote}>previous</button>
+            <button onClick={actions.nextQuote}>next</button>
+        </div>
       </div>
     );
   }

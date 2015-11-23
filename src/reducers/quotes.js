@@ -13,7 +13,7 @@ $.ajax({
 });
 
 const initialState = {
-  quotes: quotesJSON,
+  quotes: _.shuffle(quotesJSON),
   currentQuote: 0
 }
 
